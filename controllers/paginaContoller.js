@@ -19,7 +19,7 @@ const paginaViajes = async (req, res) => {
     console.log(viajes);
 
     res.render('viajes', {
-        pagina: 'Viajes',
+        pagina: 'Próximos viajes',
         viajes,
     });
 }
@@ -30,9 +30,16 @@ const paginaTestimoniales = (req, res) => {
     });
 }
 
+// Muestra un viaje por slug
+const paginaDetalleViaje = (req, res) => {
+
+    console.log(req.params.viaje);
+}
+
 export {
     paginaInicio,
     paginaNosotros,
     paginaViajes,
-    paginaTestimoniales
+    paginaTestimoniales,
+    paginaDetalleViaje
 }
