@@ -1,4 +1,6 @@
 import Sequelize from 'sequelize';
+import dotenv from 'dotenv';
+dotenv.config()
 
 const db = new Sequelize ('agenciaviajes', 'root', 'root', {
     host: '127.0.0.1',
